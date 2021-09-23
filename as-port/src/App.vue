@@ -1,60 +1,39 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+  <v-app :style="{background: $vuetify.theme.themes[theme].background}">
+    <Header></Header>
+    <router-view></router-view>
+    <v-btn fab color="amber mx-1" @click="$vuetify.goTo(0)" fixed right bottom><v-icon color="white">fa fa-long-arrow-up</v-icon></v-btn>
+    <Footer></Footer>
   </v-app>
 </template>
-
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+.v-application{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: #ECEFF1;
+    .max_w{
+      max-width: 960px;
+      margin: auto;
+    }
+}
+</style>
 <script>
-import HelloWorld from './components/HelloWorld';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
+    Header,
+    Footer
   },
+  computed:{
+    theme(){
+      return this.$vuetify.theme.light ? 'dark':'light';
+    },
+  }
 
-  data: () => ({
-    //
-  }),
+
 };
 </script>
