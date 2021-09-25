@@ -9,61 +9,8 @@
       <v-expansion-panel>
         <v-expansion-panel-header><h3 class="blue-grey--text">実務</h3></v-expansion-panel-header>
         <v-expansion-panel-content>
-          <v-row justify="center" align-content="center">
-            <v-col cols="12" lg="4" md="4" sm="6" xs="12">
-              <v-card class="blue-grey--text" outlined tile >
-                <v-card-title>大手求人サイト</v-card-title>
-                <v-card-subtitle>2016~2017/3</v-card-subtitle>
-                <v-divider class="mx-4"></v-divider>
-                <v-card-text>大型案件で運用、リデザインに対応した。ディレクターとも密に連携を取りながらタイトなスケジュールにも対応できた
-                </v-card-text>
-                <v-card-subtitle>使用ツール</v-card-subtitle>
-                <v-card-text>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>Jquery</li>
-                  </ul>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="4" md="4" sm="6" xs="12">
-              <v-card class="blue-grey--text" outlined tile>
-                <v-card-title>大手求人サイト</v-card-title>
-                <v-card-subtitle>2016~2017/3</v-card-subtitle>
-                <v-divider class="mx-4"></v-divider>
-                <v-card-text>大型案件で運用、リデザインに対応した。ディレクターとも密に連携を取りながらタイトなスケジュールにも対応できた
-                </v-card-text>
-                <v-card-subtitle>使用ツール</v-card-subtitle>
-                <v-card-text>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>Jquery</li>
-                  </ul>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="4" md="4" sm="6" xs="12">
-              <v-card class="blue-grey--text" outlined tile>
-                <v-card-title>大手求人サイト</v-card-title>
-                <v-card-subtitle>2016~2017/3</v-card-subtitle>
-                <v-divider class="mx-4"></v-divider>
-                <v-card-text>大型案件で運用、リデザインに対応した。ディレクターとも密に連携を取りながらタイトなスケジュールにも対応できた
-                </v-card-text>
-                <v-card-subtitle>使用ツール</v-card-subtitle>
-                <v-card-text>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>Jquery</li>
-                  </ul>
-                </v-card-text>
-              </v-card>
-            </v-col>
+          <v-row>
+            <WorkItem v-for="(item,index) in items" :key="index" v-bind:item="item"></WorkItem>
           </v-row>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -72,43 +19,8 @@
       <v-expansion-panel>
         <v-expansion-panel-header><h3 class="blue-grey--text">自主制作</h3></v-expansion-panel-header>
         <v-expansion-panel-content>
-          <v-row justify="center" align-content="center">
-            <v-col cols="12" lg="4" md="4" sm="6" xs="12">
-              <v-card class="blue-grey--text" outlined tile >
-                <v-card-title>大手求人サイト</v-card-title>
-                <v-card-subtitle>2016~2017/3</v-card-subtitle>
-                <v-divider class="mx-4"></v-divider>
-                <v-card-text>大型案件で運用、リデザインに対応した。ディレクターとも密に連携を取りながらタイトなスケジュールにも対応できた
-                </v-card-text>
-                <v-card-subtitle>使用ツール</v-card-subtitle>
-                <v-card-text>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>Jquery</li>
-                  </ul>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="4" md="4" sm="6" xs="12">
-              <v-card class="blue-grey--text" outlined tile>
-                <v-card-title>大手求人サイト</v-card-title>
-                <v-card-subtitle>2016~2017/3</v-card-subtitle>
-                <v-divider class="mx-4"></v-divider>
-                <v-card-text>大型案件で運用、リデザインに対応した。ディレクターとも密に連携を取りながらタイトなスケジュールにも対応できた
-                </v-card-text>
-                <v-card-subtitle>使用ツール</v-card-subtitle>
-                <v-card-text>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>Jquery</li>
-                  </ul>
-                </v-card-text>
-              </v-card>
-            </v-col>
+          <v-row>
+            <WorkItem v-for="(item,index) in originalItem" :key="index" v-bind:item="item"></WorkItem>
           </v-row>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -117,11 +29,16 @@
 </template>
 
 <script>
+import items from '../data/works.json'
+import originalItem from '../data/original.json'
+import WorkItem from './WorkItem'
 export default {
   name:'WorkItems',
-  components: {  },
+  components: { WorkItem },
     data(){
     return{
+      items:items,
+      originalItem:originalItem
     }
   },
 }
