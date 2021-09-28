@@ -1,6 +1,6 @@
 <template>
-  <ValidationObserver v-slot="ObserverProps" class="mt-4">
-    <v-form v-model="valid" data-netlify-recaptcha="true" data-netlify="true" ref="form" method="POST">
+  <ValidationObserver v-slot="ObserverProps">
+    <v-form v-model="valid" data-netlify-recaptcha="true" data-netlify="true" ref="form" method="POST" class="mt-4">
       <ValidationProvider name="Name" rules="nameRequired" v-slot="{ errors }">
         <v-text-field v-model="name" name="name" type="text" label="お名前" :error-messages="errors"></v-text-field>
       </ValidationProvider>
