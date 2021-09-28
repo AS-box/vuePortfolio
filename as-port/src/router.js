@@ -5,6 +5,7 @@ import Home from '../src/views/home'
 import Works from '../src/views/works'
 import Etc from '../src/views/etc'
 import Contact from '../src/views/contact'
+import Thanks from '../src/views/thanks'
 
 Vue.use(Router)
 
@@ -34,8 +35,12 @@ export default new Router({
     {
       path: '/contact',
       name: 'contact',
-      component:Contact
-      
+      component: Contact,
+    },
+    {
+      path: '/thanks',
+      name: 'thanks',
+      component:Thanks
     }
   ]
 })

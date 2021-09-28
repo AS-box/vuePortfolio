@@ -11,7 +11,7 @@
         <v-textarea v-model="content" name="name" type="text" label="お問い合わせ内容" :error-messages="errors"></v-textarea>
       </ValidationProvider>
       <div class="text-center mt-4">
-        <v-btn :disabled="ObserverProps.invalid || !ObserverProps.validated" color="amber accent-4" type="submit"><span class="white--text">送信する</span></v-btn>
+        <v-btn :disabled="ObserverProps.invalid || !ObserverProps.validated" color="amber accent-4" type="submit" to="/thanks"><span class="white--text">送信する</span></v-btn>
       </div>
     </v-form>
   </ValidationObserver>
