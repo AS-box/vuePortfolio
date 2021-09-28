@@ -6,10 +6,10 @@
         <v-text-field v-model="name" name="name" type="text" label="お名前" :error-messages="errors"></v-text-field>
       </ValidationProvider>
       <ValidationProvider name="email" rules="emailRequired|email" v-slot="{ errors }">
-        <v-text-field v-model="email" name="name" type="text" label="メールアドレス" :error-messages="errors"></v-text-field>
+        <v-text-field v-model="email" name="email" type="text" label="メールアドレス" :error-messages="errors"></v-text-field>
       </ValidationProvider>
       <ValidationProvider name="content" rules="contentRequired" v-slot="{ errors }">
-        <v-textarea v-model="content" name="name" type="text" label="お問い合わせ内容" :error-messages="errors"></v-textarea>
+        <v-textarea v-model="content" name="content" type="text" label="お問い合わせ内容" :error-messages="errors"></v-textarea>
       </ValidationProvider>
       <div class="text-center mt-4">
         <div class="recaptcha-item">
