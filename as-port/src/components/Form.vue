@@ -1,6 +1,6 @@
 <template>
   <ValidationObserver v-slot="ObserverProps">
-    <v-form v-model="valid" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field" data-netlify="true" ref="form" method="POST" class="mt-4" action="/contact/success/">
+    <v-form v-model="valid" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field" data-netlify="true" ref="form" method="POST" class="mt-4">
     <input type="hidden" name="form-name" value="contact" />
       <ValidationProvider name="name" rules="nameRequired" v-slot="{ errors }">
         <v-text-field v-model="name" name="name" type="text" label="お名前" :error-messages="errors"></v-text-field>
@@ -15,7 +15,7 @@
         <div class="recaptcha-item">
           <div data-netlify-recaptcha="true"></div>
         </div>
-        <v-btn :disabled="ObserverProps.invalid || !ObserverProps.validated" color="amber accent-4" type="submit"><span class="white--text">送信する</span></v-btn>
+        <v-btn :disabled="ObserverProps.invalid || !ObserverProps.validated" color="amber accent-4" type="submit" to='/contact/thanks'><span class="white--text">送信する</span></v-btn>
       </div>
     </v-form>
   </ValidationObserver>
