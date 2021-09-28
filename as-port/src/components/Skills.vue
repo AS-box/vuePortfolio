@@ -20,7 +20,7 @@
 </style>
 <script>
 export default {
-  name:'skills',
+  name:'Skills',
   components: {  },
   data(){
     return{

@@ -14,7 +14,7 @@
 <script>
 import Form from '../../components/Form'
 export default {
-  name:'Etc',
+  name:'Contact',
   components:{Form},
   data(){
     return{

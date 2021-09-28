@@ -15,7 +15,7 @@ import KV from '../../components/Kv';
 import Profile from '../../components/Profile'
 export default {
   
-  name: 'Skill',
+  name: 'Home',
   components: {
     KV,
     Profile

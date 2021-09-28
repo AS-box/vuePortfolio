@@ -43,7 +43,7 @@ extend('email',{
 })
 
 export default {
-  name:'Footer',
+  name:'Form',
   components:{
     ValidationProvider,
     ValidationObserver
