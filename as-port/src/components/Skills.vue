@@ -3,11 +3,11 @@
     <h2 class="text-decoration-underline text-center">スキルセット</h2>
     <p class="skills_text mt-4">HTML、CSSが一番得意。好きな言語はjavascript。</p>
     <h3 class="text-center mt-4">言語</h3>
-    <v-data-table dense :headers="skillHeaders" :items="skills" item-key="name" :mobile-breakpoint="0" class="elevation-1 blue-grey--text mt-4" hide-default-footer></v-data-table>
+    <v-data-table dense disable-sort :headers="skillHeaders" :items="skills" item-key="name" :mobile-breakpoint="0" class="elevation-1 blue-grey--text mt-4" hide-default-footer></v-data-table>
     <h3 class="text-center mt-4">ツール</h3>
-    <v-data-table dense :headers="toolHeaders" :items="tools" item-key="name" :mobile-breakpoint="0" class="elevation-1 blue-grey--text mt-4" hide-default-footer></v-data-table>
+    <v-data-table dense disable-sort :headers="toolHeaders" :items="tools" item-key="name" :mobile-breakpoint="0" class="elevation-1 blue-grey--text mt-4" hide-default-footer></v-data-table>
     <h3 class="text-center mt-4">フレームワーク</h3>
-    <v-data-table dense :headers="fwHeaders" :items="framework" item-key="name" :mobile-breakpoint="0" class="elevation-1 blue-grey--text mt-4" hide-default-footer></v-data-table>
+    <v-data-table dense disable-sort :headers="fwHeaders" :items="framework" item-key="name" :mobile-breakpoint="0" class="elevation-1 blue-grey--text mt-4" hide-default-footer></v-data-table>
   </v-container>
 </template>
 <style lang="scss" scoped>
