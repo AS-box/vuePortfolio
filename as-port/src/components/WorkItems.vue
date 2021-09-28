@@ -10,7 +10,7 @@
         <v-expansion-panel-header><h3 class="blue-grey--text">実務</h3></v-expansion-panel-header>
         <v-expansion-panel-content>
           <v-row>
-            <WorkItem v-for="(item,index) in items" :key="index" v-bind:item="item"></WorkItem>
+            <work-item v-for="(item,index) in items" :key="index" v-bind:item="item"></work-item>
           </v-row>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -20,7 +20,7 @@
         <v-expansion-panel-header><h3 class="blue-grey--text">自主制作</h3></v-expansion-panel-header>
         <v-expansion-panel-content>
           <v-row>
-            <WorkItem v-for="(item,index) in originalItem" :key="index" v-bind:item="item"></WorkItem>
+            <work-item v-for="(item,index) in originalItem" :key="index" v-bind:item="item"></work-item>
           </v-row>
         </v-expansion-panel-content>
       </v-expansion-panel>

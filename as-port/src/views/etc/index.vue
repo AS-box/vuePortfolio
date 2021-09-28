@@ -1,8 +1,8 @@
 <template>
   <v-container class="workItems_container blue-grey--text">
     <h2 class="text-decoration-underline text-center">その他</h2>
-    <Books></Books>
-    <MyLerning></MyLerning>
+    <books></books>
+    <my-lerning></my-lerning>
   </v-container>
 </template>
 

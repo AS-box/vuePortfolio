@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class='workItems max_w'>
-      <WorkItems></WorkItems>
+      <work-items></work-items>
     </section>
   </main>
 </template>
