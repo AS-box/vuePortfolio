@@ -15,8 +15,8 @@
       </div>
     </div>
     <h3 class="text-center mt-8">学歴・職歴</h3>
-    <v-timeline fill-dot class="mt-4">
-      <v-timeline-item small right v-for="event in history" :key="event.date">
+    <v-timeline class="mt-4">
+      <v-timeline-item  small right v-for="event in history" :key="event.date" :color="event.color">
         <template v-slot:opposite>
           <h4>{{event.date}}</h4>
         </template>
