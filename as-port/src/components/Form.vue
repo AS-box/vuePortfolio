@@ -2,14 +2,14 @@
   <ValidationObserver v-slot="ObserverProps">
     <v-form v-model="valid" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field" data-netlify="true" ref="form" method="POST" class="mt-4" action="/contact/success/">
     <input type="hidden" name="form-name" value="contact" />
-      <ValidationProvider name="Name" rules="nameRequired" v-slot="{ errors }">
+      <ValidationProvider name="name" rules="nameRequired" v-slot="{ errors }">
         <v-text-field v-model="name" name="name" type="text" label="お名前" :error-messages="errors"></v-text-field>
       </ValidationProvider>
       <ValidationProvider name="email" rules="emailRequired|email" v-slot="{ errors }">
         <v-text-field v-model="email" name="email" type="text" label="メールアドレス" :error-messages="errors"></v-text-field>
       </ValidationProvider>
-      <ValidationProvider name="content" rules="contentRequired" v-slot="{ errors }">
-        <v-textarea v-model="content" name="content" type="text" label="お問い合わせ内容" :error-messages="errors"></v-textarea>
+      <ValidationProvider name="message" rules="contentRequired" v-slot="{ errors }">
+        <v-textarea v-model="message" name="message" type="text" label="お問い合わせ内容" :error-messages="errors"></v-textarea>
       </ValidationProvider>
       <div class="text-center mt-4">
         <div class="recaptcha-item">
@@ -53,7 +53,7 @@ export default {
       valid:'',
       name:'',
       email:'',
-      content:'',
+      message:'',
 
     }
   },
