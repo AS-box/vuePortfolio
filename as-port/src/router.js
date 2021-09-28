@@ -4,6 +4,7 @@ import Skill from '../src/views/skill'
 import Home from '../src/views/home'
 import Works from '../src/views/works'
 import Etc from '../src/views/etc'
+import Contact from '../src/views/contact'
 
 Vue.use(Router)
 
@@ -28,7 +29,13 @@ export default new Router({
     {
       path: '/etc',
       name: 'etc',
-      component:Etc
+      component: Etc
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component:Contact
+      
     }
   ]
 })

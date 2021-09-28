@@ -9,7 +9,7 @@
   {
     "title":"vue.jsでブログを作ってみた(制作途中)",
     "date":"2021/9/20~2019/7",
-    "discription":"初めてのVue.jsの勉強にブログ投稿システムを作ろうとしたが、サーバー側の知識が足りず挫折中。expressの勉強をしたので、その知識を生かして再始動する予定。",
+    "discription":"初めてのVue.jsの勉強にブログ投稿システムを作ろうとしたが、サーバー側の知識が足りず挫折中。expressの勉強をしていので、その知識を生かして再始動する予定。",
     "tools":["HTML","SCSS","gulp","Vue.js","vuex","vue-router"],
     "url":"https://github.com/AS-box/blog-vue/wiki/"
   }

@@ -14,7 +14,7 @@
         <p>趣味は、ものづくり、ゲーム、イラスト制作</p>
       </div>
     </div>
-    <h3 class="text-center">学歴・職歴</h3>
+    <h3 class="text-center mt-4">学歴・職歴</h3>
     <v-timeline fill-dot class="mt-4">
       <v-timeline-item small right v-for="event in history" :key="event.date">
         <template v-slot:opposite>
@@ -32,6 +32,10 @@
     max-width: 200px;
     border-radius: 50%;
   }
+}
+.profile_text{
+  max-width: 600px;
+  margin: auto;
 }
 
 

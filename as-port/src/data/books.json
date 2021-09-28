@@ -1,0 +1,38 @@
+[
+  {
+    "name":"HTML&CSS web標準",
+    "amazon":false,
+    "url":"",
+    "discription":"HTMLの辞典のようになっていて、どの要素にどんな要素が入れられるかなどルールが細かく書いてあり今の自分の基盤になってる書物。個人的にはすごく良書だった。"
+  },
+  {
+    "name":"Web制作の現場で使う jQueryデザイン入門",
+    "amazon":true,
+    "url":"https://www.amazon.co.jp/dp/B00CU33LBA/",
+    "discription":"出版当時のjQuery使いならほとんどの人が読んでいたと思われるドーナツ本。javascriptが分からなくてもある程度のUIはこの本で組めたのでとっかかりやすいかも。でもかなり古い本なので注意。"
+  },
+  {
+    "name":"JavaScript本格入門",
+    "amazon":true,
+    "url":"https://www.amazon.co.jp/dp/B01LYO6C1N/",
+    "discription":"駆け出しエンジニアの時にお守りのように持ち歩いてた思い出。javascriptの教科書ですが最初から最後まで一気に全部理解する意気込みで読むと後で辛くなる。最初の方をで基礎を読み込み、ある程度知識がついてから後半に進むのが良さげ。改訂版が出てES6にも対応しているみたいなのでもう一度買おうと思う。"
+  },
+  {
+    "name":"フロントエンドエンジニア養成読本",
+    "amazon":true,
+    "url":"https://www.amazon.co.jp/dp/B00ME9TTMA/",
+    "discription":"出版当時必要とされていた技術がぎっしり。特にパフォーマンス改善のあたりはただjavascript、jQeryを必死に書いていた私にはなるほど！！っと思うことが多かった記憶。"
+  },
+  {
+    "name":"フロントエンドエンジニアの教科書",
+    "amazon":true,
+    "url":"https://www.amazon.co.jp/dp/4797372206/",
+    "discription":"フロントエンドエンジニアという職種が出てきた頃に出版された本。私もHTML,CSSを書いていてjavascriptを扱い始めた頃に読んだ。実際に手を動かして学べる内容もあり楽しんで読めた。"
+  },
+  {
+    "name":"Vue.js入門 基礎から実践アプリケーション開発まで",
+    "amazon":true,
+    "url":"https://www.amazon.co.jp/dp/B07J6FP6NQ/",
+    "discription":"最初の方は基礎的なところを実際に手を動かしてモノが作れるのが楽しい。後半は設計思想や、上流工程のお話になってきてかなり複雑化してきて入門者には全く分からなくなる。後半は他の入門書も読んで知識を更に深めて、サーバー側の知識を準備してから読んだら楽しそう。"
+  }
+]

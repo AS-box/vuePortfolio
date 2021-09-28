@@ -1,0 +1,61 @@
+<template>
+  <ValidationObserver v-slot="ObserverProps" class="mt-4">
+    <v-form v-model="valid" data-netlify-recaptcha="true" data-netlify="true" ref="form" method="POST">
+      <ValidationProvider name="Name" rules="nameRequired" v-slot="{ errors }">
+        <v-text-field v-model="name" name="name" type="text" label="お名前" :error-messages="errors"></v-text-field>
+      </ValidationProvider>
+      <ValidationProvider name="email" rules="emailRequired|email" v-slot="{ errors }">
+        <v-text-field v-model="email" name="name" type="text" label="メールアドレス" :error-messages="errors"></v-text-field>
+      </ValidationProvider>
+      <ValidationProvider name="content" rules="contentRequired" v-slot="{ errors }">
+        <v-textarea v-model="content" name="name" type="text" label="お問い合わせ内容" :error-messages="errors"></v-textarea>
+      </ValidationProvider>
+      <div class="text-center mt-4">
+        <v-btn :disabled="ObserverProps.invalid || !ObserverProps.validated" color="amber accent-4" type="submit"><span class="white--text">送信する</span></v-btn>
+      </div>
+    </v-form>
+  </ValidationObserver>
+</template>
+
+<script>
+import { ValidationProvider,extend,ValidationObserver } from 'vee-validate';
+import { required, email} from 'vee-validate/dist/rules'
+
+extend('nameRequired',{
+  ...required,
+  message:'お名前は必須です。'
+})
+extend('emailRequired',{
+  ...required,
+  message:'メールアドレスは必須です。'
+})
+extend('contentRequired',{
+  ...required,
+  message:'お問い合わせ内容は必須です。'
+})
+extend('email',{
+  ...email,
+  message:'有効なメールアドレスではありません'
+})
+
+export default {
+  name:'Footer',
+  components:{
+    ValidationProvider,
+    ValidationObserver
+  },
+  data(){
+    return{
+      valid:'',
+      name:'',
+      email:'',
+      content:'',
+
+    }
+  },
+  methods:{
+
+  }
+
+}
+</script>

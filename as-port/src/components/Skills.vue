@@ -1,7 +1,7 @@
 <template>
   <v-container class="skills_container blue-grey--text">
     <h2 class="text-decoration-underline text-center">スキルセット</h2>
-    <p class="mt-4">HTML、CSSが一番得意。好きな言語はjavascript。</p>
+    <p class="skills_text mt-4">HTML、CSSが一番得意。好きな言語はjavascript。</p>
     <h3 class="text-center mt-4">言語</h3>
     <v-data-table dense :headers="skillHeaders" :items="skills" item-key="name" :mobile-breakpoint="0" class="elevation-1 blue-grey--text mt-4" hide-default-footer></v-data-table>
     <h3 class="text-center mt-4">ツール</h3>
@@ -11,6 +11,12 @@
   </v-container>
 </template>
 <style lang="scss" scoped>
+.skills_container{
+  .skills_text{
+    max-width: 600px;
+    margin: auto;
+  }
+}
 </style>
 <script>
 export default {

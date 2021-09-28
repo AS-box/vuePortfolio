@@ -1,0 +1,28 @@
+[
+  {
+    "name":"超Vue.js 2 完全パック (Vue Router, Vuex含む)",
+    "auther":"よしぴー (Yoshipi)さん",
+    "site":"Udemy",
+    "url":"https://www.udemy.com/share/101rYo3@YAkMQsbddCXI8cLpeYOkNghmPEQvya9XPVD43eF05iy-H5zIFHp3Ewb0tekqTYT9Gw==/",
+    "discription":"「Vue.js入門 基礎から実践アプリケーション開発まで」の入門を更に分かりやすくした動画で学習できる。動画を見ながらモノを作ってfirebaseを使ってデプロイまでできる。おすすめ！"
+  },
+  {
+    "name":"最短・最速で学ぶ Firebase Hosting + React Todoアプリ実装編 (React Hooks)",
+    "auther":"Daiz Academyさん",
+    "site":"Udemy",
+    "url":"https://www.udemy.com/share/102Kbm3@aGXnbaaCuoyKAjTqK-OulIyAtC6tvU9GOiev7ySLe8MCZnmSy1xMQ3kUjg__9nk4jQ==/",
+    "discription":"よしぴーさんのVue.js入門を見てfirebase Hostingとはなんじゃ、と思ったので見てみた。react.jsの触りとFirebaseへのHostingの仕方が分かる。でもまあ、いやこれ以上は何もいうまい。"
+  },
+  {
+    "name":"Reactコース",
+    "site":"Progate",
+    "url":"https://prog-8.com/courses/react",
+    "discription":"せっかくvue.jsも勉強したのでreact.jsも触っておきたいと思って進めてみた。個人的にはVueよりもルールが厳しい分、ゴッチャゴチャになることが防げそう。でもこのコースだけでは実務で使えなさそうなのでやっぱ本とか買って勉強すべき。"
+  },
+  {
+    "name":"Node.jsコース",
+    "site":"Progate",
+    "url":"https://prog-8.com/courses/nodejs",
+    "discription":"Node.jsとExpressを使っての学習。まだ途中だけどデータベースを操作ができる知識がついた。最終的にはブログサイトが作れるようなので楽しみ。続けて学習していく！"
+  }
+]
