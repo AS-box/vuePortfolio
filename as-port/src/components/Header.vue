@@ -37,7 +37,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
 header{
   height: 48px;
-  a{
+  h1 a{
     font-family: 'Comfortaa', cursive;
   }
 }
