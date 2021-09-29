@@ -2,9 +2,9 @@
   {
     "title":"AS PORT",
     "date":"2021/9/21~2019/30",
-    "discription":"Vue.jsを勉強して何か一つ公開できるものを作りたいと思い作成した。読みやすいように情報の整頓に気を付けた。",
-    "tools":["HTML","gulp","Vue.js","vuetify","vue-router"],
-    "url":"https://github.com/AS-box/vuePortfolio/wiki"
+    "discription":"Vue.jsを勉強して何か一つ公開できるものを作りたいと思い作成した。読みやすいように情報の整頓に気を付けた。Netlify強すぎる。",
+    "tools":["HTML","SCSS","gulp","Vue.js","vuetify","vue-router","veeValidation","Netlify"],
+    "url":"https://github.com/AS-box/vuePortfolio/"
   },
   {
     "title":"vue.jsでブログを作ってみた(制作途中)",
