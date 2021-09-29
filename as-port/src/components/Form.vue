@@ -17,6 +17,9 @@
         </div>
         <v-btn :disabled="ObserverProps.invalid || !ObserverProps.validated" color="amber accent-4" type="submit"><span class="white--text">送信する</span></v-btn>
       </div>
+      <div class="text-center mt-4">
+        <v-btn fab color="#1DA1F2" x-small depressed href="https://twitter.com/as_desmer" target="_blank"><v-icon class="white--text">fa fa-twitter</v-icon></v-btn>
+      </div>
     </v-form>
   </ValidationObserver>
 </template>
