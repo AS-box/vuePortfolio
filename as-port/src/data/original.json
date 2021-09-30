@@ -1,16 +1,26 @@
 [
   {
-    "title":"AS PORT",
-    "date":"2021/9/21~2019/30",
+    "title":"AS PORT(こちらのサイト)",
+    "date":"2021/9/21~2021/9/30",
     "discription":"Vue.jsを勉強して何か一つ公開できるものを作りたいと思い作成した。読みやすいように情報の整頓に気を付けた。Netlify強すぎる。",
     "tools":["HTML","SCSS","gulp","Vue.js","vuetify","vue-router","veeValidation","Netlify"],
-    "url":"https://github.com/AS-box/vuePortfolio/"
+    "url":"https://github.com/AS-box/vuePortfolio/",
+    "icon":"fa-github-alt"
+  },
+  {
+    "title":"AS PORT Illustration",
+    "date":"2021/9/17~2021/9/18",
+    "discription":"今まで作成したイラストやデザインをまとめたサイト。インターンで制作し、実際に公開されたデザインもあり。イラスト、デザインの詳細はこちらのサイトへ。",
+    "tools":["WIX","photoshop","Illustrater","ClipStudioPaint","Figma"],
+    "url":"https://github.com/AS-box/vuePortfolio/",
+    "icon":"fa-home"
   },
   {
     "title":"vue.jsでブログを作ってみた(制作途中)",
     "date":"2020/11/11~2021/9/21",
-    "discription":"初めてのVue.jsの勉強にブログ投稿システムを作ろうとしたが、サーバー側の知識が足りず挫折中。expressの勉強をしていので、その知識を生かして再始動する予定。",
+    "discription":"初めてのVue.jsの勉強にブログ投稿システムを作ろうとしたが、サーバー側の知識が足りず挫折中。expressの勉強をしているので、その知識を生かして再始動する予定。",
     "tools":["HTML","SCSS","gulp","Vue.js","vuex","vue-router"],
-    "url":"https://github.com/AS-box/blog-vue/wiki/"
+    "url":"https://github.com/AS-box/blog-vue/wiki/",
+    "icon":"fa-github-alt"
   }
 ]
