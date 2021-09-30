@@ -94,7 +94,7 @@ export default {
         {
           skill:'Javascript',
           terms:'8年',
-          stars:'★★★★☆'
+          stars:'★★★★★'
         },
         {
           skill:'jQuery',

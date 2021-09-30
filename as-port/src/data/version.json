@@ -1,0 +1,14 @@
+[
+  {
+    "device":"パソコン",
+    "version":"safari 最新版 / Google Chrome 最新版"
+  },
+  {
+    "device":"Andoroid",
+    "version":"Google Mobile Chrome 最新版"
+  },
+  {
+    "device":"iOS",
+    "version":"Mobile Safari 最新版"
+  }
+]
