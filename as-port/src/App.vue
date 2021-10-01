@@ -1,6 +1,7 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes[theme].background}">
-    <Header></Header>
+    <Header @CatchDrawer="overDrawer"></Header>
+    <Navigation :drawer="isDrawer"></Navigation>
     <router-view></router-view>
     <v-btn class="toTop-btn" fab color="amber mx-1" v-bind:class="{show:isShow}"  v-scroll="onScroll" @click="$vuetify.goTo(0)" fixed right bottom><v-icon color="white">fa fa-long-arrow-up</v-icon></v-btn>
     <Footer></Footer>
@@ -27,13 +28,14 @@
 <script>
 import Header from './components/Header';
 import Footer from './components/Footer';
-
+import Navigation from './components/navigation.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer
+    Footer,
+    Navigation
   },
   computed:{
     theme(){
@@ -42,7 +44,8 @@ export default {
   },
   data(){
     return {
-      isShow:false
+      isShow:false,
+      isDrawer:false
     }
   },
   methods:{
@@ -54,6 +57,9 @@ export default {
         this.isShow = top > 20;
       }
       
+    },
+    overDrawer(isDrawer){
+      this.isDrawer = isDrawer;
     }
   }
   
