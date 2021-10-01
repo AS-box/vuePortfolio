@@ -1,5 +1,5 @@
 <template>
-  <section class="books">
+  <section class="myLearning">
     <h3 class="text-center mt-12">Udemy、Progateとか</h3>
     <v-row class="mt-4">
       <v-col cols="12" lg="4" md="4" sm="4" xs="12" v-for="(item,index) in items" :key="index">
