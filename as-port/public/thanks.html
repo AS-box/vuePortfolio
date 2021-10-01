@@ -1,63 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-</head>
-<body>
-  <div id="app">
-    <v-app>
-      <v-app-bar color="blue lighten-2 white--text" app flat dense class="pa-0">
-        <v-toolbar-title>
-          <h1 class="text-h6"><a href="/" class="white--text text-decoration-none">AS&nbsp;<v-icon color="white">fa fa-plane</v-icon>&nbsp;PORT</a></h1>
-        </v-toolbar-title>
-      </v-app-bar>
-      <v-main>
-        <v-container class="thanks_container blue-grey--text mt-4">
-          <p class="text-center">お問い合わせありがとうございました。<br>折り返しのメールをお送りするまでしばらくお待ちください。</p>
-          <div class="text-center mt-4">
-            <a href="/" class="text-decoration-none"><v-btn color="amber accent-4"><span class="white--text">TOPに戻る</span></v-btn></a>
-          </div>
-        </v-container>
-      </v-main>
-      <v-footer padless class="mt-8">
-        <v-col class="text-center text-caption blue lighten-2 white--text" cols="12 ">&copy; 2021 - TANAKA AI.</v-col>
-      </v-footer>  
-    </v-app>
-  </div>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
-    body .v-application{
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      background-color: rgb(236, 239, 241)!important;
-    }
-    header{
-      height: 48px;
-    }
-    header a{
-      font-family: 'Comfortaa', cursive;
-    }
-    .thanks_container .v-btn{
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      font-weight:500;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden action="/thanks.html">
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
+    </div>
 
-  </style>
-  <script src="https://use.fontawesome.com/86fee82cc8.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-  <script>
-    new Vue({
-      el: '#app',
-      vuetify: new Vuetify(),
-    })
-  </script>
-</body>
+    <!-- built files will be auto injected -->
+  </body>
 </html>
