@@ -34,5 +34,11 @@
     "amazon":true,
     "url":"https://www.amazon.co.jp/dp/B07J6FP6NQ/",
     "discription":"最初の方は基礎的なところを実際に手を動かしてモノが作れるのが楽しい。後半は設計思想や、上流工程のお話になってきてかなり複雑化してきて入門者には全く分からなくなる。後半は他の入門書も読んで知識を更に深めて、サーバー側の知識を準備してから読んだら楽しそう。"
+  },
+  {
+    "name":"モダンJavascriptの基本から始めるReact実践の教科書",
+    "amazon":true,
+    "url":"https://amzn.asia/d/9AUmzXb",
+    "discription":"サクサク読み進められる。基本的なjavascriptの知識があれば手を動かしての学習も楽しい。モダンjavascriptについての知識も記載されているのでそちらもかなり役に立った。reactについての知識もそうだがreactに必要な知識も学習できた。"
   }
 ]
