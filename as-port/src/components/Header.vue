@@ -19,6 +19,9 @@
           <v-list-item to="/works">
             <v-list-item-title><v-icon class="mr-4">fa fa-pencil-square-o</v-icon><span>実績</span></v-list-item-title>
           </v-list-item>
+          <v-list-item to="/gallary">
+            <v-list-item-title><v-icon class="mr-4">fa fa-pencil-square-o</v-icon><span>ギャラリー</span></v-list-item-title>
+          </v-list-item>
           <!-- <v-list-item to="/goal">
             <v-list-item-title><v-icon class="mr-4">fa fa-line-chart</v-icon>目標</v-list-item-title>
           </v-list-item> -->
